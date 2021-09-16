@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditProduct">
+   <children>
+      <TextField fx:id="txtExcistingProduct" layoutX="29.0" layoutY="51.0" prefHeight="31.0" prefWidth="281.0" promptText="Excisting Product">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNewProduct" layoutX="329.0" layoutY="51.0" prefHeight="39.0" prefWidth="261.0" promptText="New Product">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnUpdateProduct" layoutX="609.0" layoutY="51.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="39.0" prefWidth="159.0" text="Update Product">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+       <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+           <image>
+               <Image url="@../Img/list.png" />
+           </image>
+       </ImageView>
+   </children>
+</AnchorPane>

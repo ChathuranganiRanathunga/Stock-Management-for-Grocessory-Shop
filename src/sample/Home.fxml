@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #AFEEEE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuButton layoutY="70.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="250.0" text="Categories">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#AddCategorySelect" text="Add Category" />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewCategorySelect" text="View Category in table" />
+                  <MenuItem mnemonicParsing="false" onAction="#EditTableSelect" text="Edit table" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteCategorySelect" text="Delete Category" />
+              </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <MenuButton layoutY="169.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="250.0" text="Product and Stoct Management">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddProductSelect" text="Add product" />
+                  <MenuItem mnemonicParsing="false" onAction="#SearchProductSelect" text="Search Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewProductSelect" text="View Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#EditProductSelect" text="Edit Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteProductSelect" text="Delete Product" />
+               </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <MenuButton layoutY="269.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="250.0" text="Stock">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddStockSelect" text="Add to Stock" />
+                  <MenuItem mnemonicParsing="false" onAction="#RemoveStockSelect" text="Remove from Stock" />
+                  <MenuItem mnemonicParsing="false" onAction="#StockDetailsAllSelect" text="Stock details All Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#StockDetailsSingleSelect" text="Stoct details Single product" />
+               </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <Button layoutX="95.0" layoutY="532.0" mnemonicParsing="false" onAction="#LogOut" text="Log Out">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="400.0" fitWidth="550.0" layoutX="250.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <image>
+            <Image url="@../Img/onlineshop.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
